@@ -5,16 +5,7 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <nav>
-        <a href="/stanem-pages/index.html" {% if page.url == "/stanem-pages/index.html" %}style="color: red;"{% endif %}>
-          Home
-        </a>
-        <a href="/stanem-pages/about.html" {% if page.url == "/stanem-pages/about.html" %}style="color: red;"{% endif %}>
-          About
-        </a>
-      </nav>
     {% include navigation.html %}
     {{ content }}
   </body>
-
 </html>

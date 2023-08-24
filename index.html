@@ -27,6 +27,14 @@
   </head>
 
   <body>
+    <nav>
+      <a href="/stanem-pages/index.html" {% if page.url == "/stanem-pages/index.html" %}style="color: red;"{% endif %}>
+        Home
+      </a>
+      <a href="/stanem-pages/about.html" {% if page.url == "/stanem-pages/about.html" %}style="color: red;"{% endif %}>
+        About
+      </a>
+    </nav>
     <div class="container mx-auto">
       <img width="342px" height="200px" src="images/154365172.gif" class="logo mx-auto" alt="Privetik" />
       <h1>Site for luchshey best friend.</h1>
