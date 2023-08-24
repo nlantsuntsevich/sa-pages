@@ -1,0 +1,347 @@
+@media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  /*16px*/
+  
+  body {
+    background: white;
+    color: rgb(75 85 99);
+  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  div.container {
+    padding: 0 0.5em 0 0.5em;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    text-align: justify;
+  }
+  
+  li {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2.488rem;
+  }
+  
+  h2 {
+    font-size: 2.074rem;
+  }
+  
+  h3 {
+    font-size: 1.728rem;
+  }
+  
+  h4 {
+    font-size: 1.44rem;
+  }
+  
+  h5 {
+    font-size: 1.2rem;
+  }
+  
+  small,
+  .text_small {
+    font-size: 0.833rem;
+  }
+  
+  a {
+    color: #5569ff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .resp-sharing-button__link,
+  .resp-sharing-button__icon {
+    display: inline-block
+  }
+  
+  .resp-sharing-button__link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5em
+  }
+  
+  .resp-sharing-button {
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: 0.5em 0.75em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  }
+  
+  .resp-sharing-button__icon svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: top
+  }
+  
+  .resp-sharing-button--small svg {
+    margin: 0;
+    vertical-align: middle
+  }
+  
+  /* Non solid icons get a stroke */
+  .resp-sharing-button__icon {
+    stroke: #fff;
+    fill: none
+  }
+  
+  /* Solid icons get a fill */
+  .resp-sharing-button__icon--solid,
+  .resp-sharing-button__icon--solidcircle {
+    fill: #fff;
+    stroke: none
+  }
+  
+  .resp-sharing-button--twitter {
+    background-color: #55acee
+  }
+  
+  .resp-sharing-button--twitter:hover {
+    background-color: #2795e9
+  }
+  
+  .resp-sharing-button--pinterest {
+    background-color: #bd081c
+  }
+  
+  .resp-sharing-button--pinterest:hover {
+    background-color: #8c0615
+  }
+  
+  .resp-sharing-button--facebook {
+    background-color: #3b5998
+  }
+  
+  .resp-sharing-button--facebook:hover {
+    background-color: #2d4373
+  }
+  
+  .resp-sharing-button--tumblr {
+    background-color: #35465C
+  }
+  
+  .resp-sharing-button--tumblr:hover {
+    background-color: #222d3c
+  }
+  
+  .resp-sharing-button--reddit {
+    background-color: #5f99cf
+  }
+  
+  .resp-sharing-button--reddit:hover {
+    background-color: #3a80c1
+  }
+  
+  .resp-sharing-button--google {
+    background-color: #dd4b39
+  }
+  
+  .resp-sharing-button--google:hover {
+    background-color: #c23321
+  }
+  
+  .resp-sharing-button--linkedin {
+    background-color: #0077b5
+  }
+  
+  .resp-sharing-button--linkedin:hover {
+    background-color: #046293
+  }
+  
+  .resp-sharing-button--email {
+    background-color: #777
+  }
+  
+  .resp-sharing-button--email:hover {
+    background-color: #5e5e5e
+  }
+  
+  .resp-sharing-button--xing {
+    background-color: #1a7576
+  }
+  
+  .resp-sharing-button--xing:hover {
+    background-color: #114c4c
+  }
+  
+  .resp-sharing-button--whatsapp {
+    background-color: #25D366
+  }
+  
+  .resp-sharing-button--whatsapp:hover {
+    background-color: #1da851
+  }
+  
+  .resp-sharing-button--hackernews {
+    background-color: #FF6600
+  }
+  
+  .resp-sharing-button--hackernews:hover,
+  .resp-sharing-button--hackernews:focus {
+    background-color: #FB6200
+  }
+  
+  .resp-sharing-button--vk {
+    background-color: #507299
+  }
+  
+  .resp-sharing-button--vk:hover {
+    background-color: #43648c
+  }
+  
+  .resp-sharing-button--facebook {
+    background-color: #3b5998;
+    border-color: #3b5998;
+  }
+  
+  .resp-sharing-button--facebook:hover,
+  .resp-sharing-button--facebook:active {
+    background-color: #2d4373;
+    border-color: #2d4373;
+  }
+  
+  .resp-sharing-button--twitter {
+    background-color: #55acee;
+    border-color: #55acee;
+  }
+  
+  .resp-sharing-button--twitter:hover,
+  .resp-sharing-button--twitter:active {
+    background-color: #2795e9;
+    border-color: #2795e9;
+  }
+  
+  .resp-sharing-button--linkedin {
+    background-color: #0077b5;
+    border-color: #0077b5;
+  }
+  
+  .resp-sharing-button--linkedin:hover,
+  .resp-sharing-button--linkedin:active {
+    background-color: #046293;
+    border-color: #046293;
+  }
+  
+  .resp-sharing-button--whatsapp {
+    background-color: #25D366;
+    border-color: #25D366;
+  }
+  
+  .resp-sharing-button--whatsapp:hover,
+  .resp-sharing-button--whatsapp:active {
+    background-color: #1DA851;
+    border-color: #1DA851;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: rgb(33 37 43);
+      color: rgb(228 228 228);
+    }
+  
+    a {
+      color: #7b8bff;
+    }
+  }
+  
+  .share-social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .co-signed {
+    width: 100%;
+  }
+  
+  .co-signed th,
+  .co-signed td {
+    text-align: left;
+    padding: 5px;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  figure figcaption,
+  figure blockquote {
+    margin: 1em;
+  }
+  
+  figure blockquote {
+    border-left: 2px solid #5569ff;
+    padding: 1em;
+  }
+  
+  span {
+    margin-right: 20px; 
+  }
+  
+  .count {
+    font-weight: bold;
+  }
+  
+  .Info{
+    overflow-x: auto;
+  }
+  .Info::-webkit-scrollbar{
+    display: none;
+  }
