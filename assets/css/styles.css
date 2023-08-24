@@ -9,11 +9,8 @@
       max-width: 768px;
     }
   }
-  .current {
-    color: rgb(219, 25, 174);
-  }
-  
-  html {
+
+    html {
     font-size: 100%;
   }
   
