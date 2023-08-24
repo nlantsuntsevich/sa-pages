@@ -1,7 +1,6 @@
 <nav>
     {% for item in site.data.navigation %}
-    <ul class="sidenav">
-      <li></li><a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>{{ item.name }}</a><li></li>
-    </ul> 
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="container mx-auto"{% endif %}>{{ item.name }}</a>
     {% endfor %}
   </nav>
+  
