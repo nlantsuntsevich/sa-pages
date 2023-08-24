@@ -1,5 +1,7 @@
 <nav>
-    <a href="/stanem-pages">Home</a>
-    <a href="/stanem-pages/about.html">About</a>
-    <a href="/stanem-pages/contacts.html">Contacts</a>
-</nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+  </nav>
