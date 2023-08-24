@@ -12,7 +12,13 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    {% include navigation.html %}
+    <nav>
+      {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+          {{ item.name }}
+        </a>
+      {% endfor %}
+    </nav>
     {{ content }}
   </body>
 </html>
