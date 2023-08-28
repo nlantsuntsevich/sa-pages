@@ -8,10 +8,13 @@ function initClient() {
         scope: 'https://www.googleapis.com/auth/photoslibrary.readonly',
     }).then(function() {
         // API client is initialized and ready for use
+        do_work();
     });
 }
 
-gapi.client.photoslibrary.sharedAlbums.list()
+function do_work()
+{
+    gapi.client.photoslibrary.sharedAlbums.list()
     .then(function(response) {
         const sharedAlbumId = response.result.sharedAlbums[0].id;
         return gapi.client.photoslibrary.mediaItems.search({
@@ -44,3 +47,4 @@ gapi.client.photoslibrary.sharedAlbums.list()
     .catch(function(error) {
         console.error('Error fetching media items:', error);
     });
+}
