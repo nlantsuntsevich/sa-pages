@@ -1,16 +1,3 @@
-gapi.load('client', initClient);
-
-function initClient() {
-    gapi.client.init({
-        apiKey: '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',
-        clientId: '299873796074-6i1h3vrbdsd0r5b01t66sorn4kk067jl.apps.googleusercontent.com',
-        discoveryDocs: ['https://photoslibrary.googleapis.com/$discovery/rest?version=v1'],
-        scope: 'https://www.googleapis.com/auth/photoslibrary.readonly',
-    }).then(function() {
-        // API client is initialized and ready for use
-        do_work();
-    });
-}
 
 function do_work()
 {
