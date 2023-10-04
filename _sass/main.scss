@@ -40,21 +40,21 @@
     max-width: 100%;
   }
 
-@media (min-width: 640px) {
-    .container {
-      max-width: 640px;
-    }
-  }
+// @media (min-width: 640px) {
+//     .container {
+//       max-width: 640px;
+//     }
+//   }
   
-  @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  }
+//   @media (min-width: 768px) {
+//     .container {
+//       max-width: 768px;
+//     }
+//   }
 
-    html {
-    font-size: 100%;
-  }
+//     html {
+//     font-size: 100%;
+//   }
 
 /* Add some basic styles to ensure the video container scales */
 .video-container {
