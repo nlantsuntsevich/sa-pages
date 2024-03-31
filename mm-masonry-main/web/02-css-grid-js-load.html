@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Masonry Layout with Grid and JS</title>
-    <link
-      href="/stanem-pages/assets/css/style.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="./base.css" rel="stylesheet" type="text/css" />
+    <link href="../css/mm-masonry.css" rel="stylesheet" type="text/css" />
     <meta name="description" content="CSS Masonry Layout with Grid and JS" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -91,17 +86,15 @@
       </div>
     </div>
     <script>
-      const mmMasonryItems = document.querySelectorAll(
-        ".js-mm-masonry .mm-masonry__item"
-      );
+      const mmMasonryItems = document.querySelectorAll('.js-mm-masonry .mm-masonry__item')
 
       mmMasonryItems.forEach((item) => {
-        const img = item.querySelector(".mm-masonry__img");
-        img.addEventListener("load", () => {
-          item.style.setProperty("--w", img.naturalWidth);
-          item.style.setProperty("--h", img.naturalHeight);
-        });
-      });
+        const img = item.querySelector('.mm-masonry__img')
+        img.addEventListener('load', () => {
+          item.style.setProperty('--w', img.naturalWidth)
+          item.style.setProperty('--h', img.naturalHeight)
+        })
+      })
     </script>
   </body>
 </html>
