@@ -21,7 +21,7 @@
 
 @media (min-width: 768px) {
   .mm-masonry {
-    --_col-width: var(--col-width, 280);
+    --_col-width: var(--col-width, 220);
     --_col-width-px: calc(var(--_col-width) * 1px);
     --_gap: calc(var(--gap, 20) * 1px);
 
