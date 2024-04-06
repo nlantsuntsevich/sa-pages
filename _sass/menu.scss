@@ -6,7 +6,8 @@ section {
 
 /* NAVIGATION */
 nav {
-  width: 80%;
+  //   width: 80%;
+  width: auto;
   margin: 0 auto;
   background: #fff;
   //   padding: 50px 0;
@@ -45,8 +46,8 @@ nav.stroke ul li a,
 nav.fill ul li a {
   position: relative;
 }
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
+
+nav.stroke ul li a:after {
   position: absolute;
   bottom: 0;
   left: 0;
