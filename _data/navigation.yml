@@ -1,4 +1,8 @@
-- name: Home
+- name: home
   link: /stanem-pages
-- name: Contact
-  link: /stanem-pages/about.html
+- name: i
+  link: /stanem-pages/i.html
+- name: ii
+  link: /stanem-pages/ii.html
+- name: contacts
+  link: /stanem-pages/contacts.html

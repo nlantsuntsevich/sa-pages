@@ -1,37 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAZAWANIE SAJTA</title>
-    <link
-      href="/stanem-pages/assets/css/style.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <meta name="description" content="NAZAWANIE SAJTA" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script src="/stanem-pages/assets/js/content.js"></script>
-  </head>
-  <body>
+---
+title: NAZWANIE SAJTA
+layout: default
+---
     <div class="container">
       <h1>
-        <a>NAZAWANIE SAJTA</a>
+        <a>{{ page.title }}</a>
       </h1>
       <nav>
         <a href="/stanem-pages" {% if page.url == "/stanem-pages" %}class="current"{% endif %}>
-          <h3> Home </h3>
+           home
         </a>
-        <a href="/stanem-pages/projects.html" {% if page.url == "/stanem-pages/about.html" %}class="current"{% endif %}>
-          <h3> Projects </h3>
+        <a href="/stanem-pages/ii.html" {% if page.url == "/stanem-pages/ii.html" %}class="current"{% endif %}>
+           i
         </a>
+        <a href="/stanem-pages/iii.html" {% if page.url == "/stanem-pages/iii.html" %}class="current"{% endif %}>
+          ii
+       </a>
         <a href="/stanem-pages/contacts.html" {% if page.url == "/stanem-pages/contacts.html" %}class="current"{% endif %}>
-          <h3> Contacts </h3>
+           contacts 
         </a>
       </nav>
-
-      <!-- <h2></h2> -->
 
       <div class="mm-columns">
         <div class="mm-columns__item">
@@ -180,5 +168,3 @@
         </div>
       </div>
     </div>
-  </body>
-</html>
