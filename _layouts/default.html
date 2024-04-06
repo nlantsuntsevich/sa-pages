@@ -15,7 +15,8 @@
       <h1>
         <a>{{ page.title }}</a>
       </h1>
-      {% include navigation.html %} {{ content }}
+      {% include navigation.html %} {{ content }} {{ site.time |
+      date_to_string}}
     </div>
   </body>
 </html>
