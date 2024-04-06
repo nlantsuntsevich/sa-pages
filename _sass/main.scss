@@ -1,3 +1,16 @@
+// body {
+//   padding: 0 24px;
+//   color: #aaa;
+//   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   text-align: center;
+// }
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -9,24 +22,27 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  padding: 0 24px;
-  color: #aaa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
-
 .container {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
+// h1 {
+//   margin: 5rem 2rem 4rem;
+//   text-align: center;
+//   font-size: 1.5rem;
+//   font-weight: bold;
+// }
+
 h1 {
-  margin: 5rem 2rem 4rem;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+  padding: 50px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 40px;
 }
 
 .controls {
