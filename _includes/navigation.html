@@ -1,10 +1,6 @@
 <nav>
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}"
-     {% if page.url == item.link %} class="menu-highlight"{% endif %}>
-      {{ item.name }}
-    </a>
+  <a href="{{ item.link }}"> {{ item.name }} </a>
   {% endfor %}
   <p></p>
 </nav>
-  
