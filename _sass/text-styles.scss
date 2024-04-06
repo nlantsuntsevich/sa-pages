@@ -67,7 +67,24 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color: rgb(47, 53, 47);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(217, 167, 175);
+  background-color: transparent;
+  text-decoration: none;
+}
 a:hover {
+  color: rgb(80, 83, 105);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(75, 75, 89);
+  background-color: transparent;
   text-decoration: underline;
 }
 
@@ -260,8 +277,8 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: rgb(33, 37, 43);
-    color: rgb(228, 228, 228);
+    background: rgb(66, 67, 75);
+    color: whitesmoke;
   }
 
   a {
