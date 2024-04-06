@@ -1,14 +1,8 @@
-// body {
-//   padding: 0 24px;
-//   color: #aaa;
-//   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-//   text-align: center;
-// }
-
 body {
-  font-family: "Roboto", sans-serif;
-  padding: 0;
-  margin: 0;
+  padding: 0 24px;
+  color: #aaa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Roboto";
+  text-align: center;
 }
 
 html {
@@ -28,22 +22,22 @@ html {
   margin-left: auto;
 }
 
-h1 {
-  margin: 5rem 2rem 4rem;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
 // h1 {
+//   margin: 5rem 2rem 4rem;
 //   text-align: center;
-//   padding: 50px 0;
-//   font-weight: 800;
-//   margin: 0;
-//   letter-spacing: -1px;
-//   color: inherit;
-//   font-size: 40px;
+//   font-size: 1.5rem;
+//   font-weight: bold;
 // }
+
+h1 {
+  text-align: left;
+  padding: 50px 0;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  color: inherit;
+  font-size: 40px;
+}
 
 .controls {
   text-align: center;
