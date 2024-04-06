@@ -15,6 +15,11 @@
     <script src="/stanem-pages/assets/js/content.js"></script>
   </head>
   <body>
-    {{ content }}
+    <div class="container">
+      <h1>
+        <a>{{ page.title }}</a>
+      </h1>
+      {% include navigation.html %} {{ content }}
+    </div>
   </body>
 </html>
