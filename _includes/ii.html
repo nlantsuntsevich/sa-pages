@@ -1,0 +1,11 @@
+<div class="mm-columns">
+  {% for item in site.data.ii %}
+  <div class="mm-columns__item">
+    <img
+      class="mm-columns__img"
+      src="{{ item.src_url}}"
+      onclick="window.open(this.src, '_blank');"
+    />
+  </div>
+  {% endfor %}
+</div>
