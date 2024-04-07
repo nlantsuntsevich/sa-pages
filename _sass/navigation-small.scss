@@ -50,11 +50,9 @@ nav.stroke a:active {
   // text-transform: uppercase;
   text-align: center;
   margin: 0 10px;
-
-  font-family: inherit;
 }
 
-.topnav a:first-child {
+.topnav a:nth-of-type(2) {
   padding-left: 0;
 }
 
@@ -74,7 +72,6 @@ nav.stroke a:active {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #555;
   }
 
   .topnav a:not(:first-child) {
