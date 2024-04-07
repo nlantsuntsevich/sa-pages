@@ -16,54 +16,108 @@
   #menu-checkbox {
     display: none;
   }
+}
 
-  /* By Dominik Biedebach @domobch */
-  // nav ul {
-  //   list-style: none;
-  //   text-align: center;
-  // }
-  // nav ul li {
-  //   display: inline-block;
-  // }
-  // nav ul li a {
-  //   display: block;
-  //   padding: 15px;
-  //   text-decoration: none;
-  //   color: #aaa;
-  //   font-weight: 800;
-  //   text-transform: uppercase;
-  //   margin: 0 10px;
-  // }
-  // nav ul li a,
-  // nav ul li a:after,
-  // nav ul li a:before {
-  //   transition: all 0.5s;
-  // }
-  // nav ul li a:hover {
-  //   color: #555;
-  // }
+/* Add a black background color to the top navigation */
 
-  // /* By Dominik Biedebach @domobch */
+nav a,
+nav a:after,
+nav a:before {
+  transition: all 0.5s;
+}
+nav a:hover {
+  color: #555;
+}
+/* stroke */
+nav.stroke a {
+  position: relative;
+}
 
-  // /* stroke */
-  // nav.stroke ul li a,
-  // nav.fill ul li a {
+nav.stroke a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #333;
+  height: 1px;
+}
+nav.stroke a:hover:after {
+  width: 100%;
+}
+
+nav.stroke a:active {
+  content: none;
+}
+
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  // float: left;
+  // display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .topnav {
+    padding: 20px 0 50px 0;
+  }
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.topnav a.icon:after {
+  content: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+ This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  // .topnav.responsive {
   //   position: relative;
   // }
-
-  // nav.stroke ul li a:after {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   margin: auto;
-  //   width: 0%;
-  //   content: ".";
-  //   color: transparent;
-  //   background: #333;
-  //   height: 1px;
-  // }
-  // nav.stroke ul li a:hover:after {
-  //   width: 100%;
-  // }
+  .topnav.responsive a.icon {
+    float: none;
+    display: block;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
