@@ -60,6 +60,7 @@ nav.stroke a:hover:after {
   .topnav a.icon {
     float: left;
     display: block;
+    background-color: #555;
   }
 }
 
@@ -70,7 +71,7 @@ nav.stroke a:hover:after {
   }
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     background-color: #555;
   }
