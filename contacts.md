@@ -1,6 +1,6 @@
 ---
 title: SAJT DLYA STEFO4KI
-subtitle: contact information
+subtitle: food fotograhy you want
 layout: contacts
 ---
 
