@@ -1,7 +1,17 @@
-<nav class="stroke">
-  <ul>
-    {% for item in site.data.navigation %}
-    <li><a href="{{ item.link }}"> {{ item.name }} </a></li>
-    {% endfor %}
-  </ul>
-</nav>
+<div class="phone">
+  <div class="menu-content">
+    <nav class="stroke" role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          {% for item in site.data.navigation %}
+          <li><a href="{{ item.link }}"> {{ item.name }} </a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
