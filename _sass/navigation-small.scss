@@ -51,6 +51,10 @@ nav.stroke a:hover:after {
   display: none;
 }
 
+.topnav a.icon:hover {
+  text-decoration: none;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {
@@ -69,9 +73,6 @@ nav.stroke a:hover:after {
     position: relative;
   }
   .topnav.responsive a.icon {
-    position: absolute;
-    left: 0;
-    top: 0;
     float: none;
     display: block;
   }
