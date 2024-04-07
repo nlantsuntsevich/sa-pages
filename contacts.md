@@ -1,14 +1,11 @@
 ---
 title: SAJT DLYA STEFO4KI
 subtitle: food fotograhy you want
+phone_numner: 07911111111111111
+email_address: placeholder@gmail.com
+email_subject: Food Fotography Reques
+email_body: Hi, I'm sexy and I know it
 layout: contacts
 ---
 
 For all enquires
-
-<a href="tel:1111111">07911111111111111</a>
-
-<p></p>
-<a href="mailto:example@example.com">example@example.com</a>
-
-I'm sexy and I know it
