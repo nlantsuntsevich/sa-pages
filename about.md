@@ -1,5 +1,6 @@
 ---
 title: SAJT DLYA STEFO4KI
+subtitle: food fotograhy you want
 layout: about
 ---
 
