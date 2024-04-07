@@ -50,10 +50,14 @@ nav.stroke a:active {
   // text-transform: uppercase;
   text-align: center;
   margin: 0 10px;
+  font-size: 1.5em;
 }
 
-.topnav a:nth-of-type(2) {
-  padding-left: 0;
+@media screen and (min-width: 768px) {
+  .topnav a:nth-of-type(2) {
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -77,6 +81,7 @@ nav.stroke a:active {
   .topnav a:not(:first-child) {
     display: none;
   }
+
   .topnav a.icon {
     float: left;
     display: block;
