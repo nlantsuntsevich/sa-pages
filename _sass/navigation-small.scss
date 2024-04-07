@@ -28,6 +28,11 @@ nav.stroke a:after {
 nav.stroke a:hover:after {
   width: 100%;
 }
+
+nav.stroke a:active {
+  content: none;
+}
+
 .topnav {
   // background-color: #333;
   overflow: hidden;
@@ -49,10 +54,6 @@ nav.stroke a:hover:after {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
-}
-
-.topnav a.icon:hover {
-  text-decoration: none;
 }
 
 .topnav a.icon:after {
