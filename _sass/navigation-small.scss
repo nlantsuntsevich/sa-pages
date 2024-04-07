@@ -62,6 +62,12 @@ nav.stroke a:active {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
+  .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -74,9 +80,9 @@ nav.stroke a:active {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
  This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 768px) {
-  .topnav.responsive {
-    position: relative;
-  }
+  // .topnav.responsive {
+  //   position: relative;
+  // }
   .topnav.responsive a.icon {
     float: none;
     display: block;
