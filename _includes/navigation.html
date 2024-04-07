@@ -1,4 +1,4 @@
-<div class="phone">
+<!-- <div class="phone">
   <div class="menu-content">
     <nav class="stroke" role="navigation">
       <div id="menuToggle">
@@ -14,4 +14,23 @@
       </div>
     </nav>
   </div>
-</div>
+</div> -->
+<script lang="javascript">
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "stroke topnav";
+    }
+  }
+</script>
+<nav class="stroke topnav" role="navigation" id="myTopnav">
+  <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  {% for item in site.data.navigation %}
+  <a href="{{ item.link }}"> {{ item.name }} </a>
+  {% endfor %}
+</nav>
