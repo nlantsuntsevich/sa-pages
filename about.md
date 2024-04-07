@@ -3,7 +3,7 @@ title: SAJT DLYA STEFO4KI
 layout: about
 ---
 
-### I’m a freelance food photographer, content creator, food stylist, and recipe developer passionate about all things related to food and beverages, especially healthy vegetarian and vegan foods, and desserts. With work experience in speciality coffee (my favourite hobby) I professionally make and shoot all sorts of coffee-based drinks
+I’m a freelance food photographer, content creator, food stylist, and recipe developer passionate about all things related to food and beverages, especially healthy vegetarian and vegan foods, and desserts. With work experience in speciality coffee (my favourite hobby) I professionally make and shoot all sorts of coffee-based drinks
 
 - I develop easy and delicious recipes for my clients and tailor the content to their needs, whether it’s photography or video for their social media campaigns and brand collaborations
 
