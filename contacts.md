@@ -4,13 +4,16 @@ subtitle: contact information
 layout: contacts
 ---
 
+<p></p>
 For all enquires
-
-<a href="tel:1111111">Call Me!</a>
+<p></p>
+<a href="tel:1111111">07911111111111111</a>
+<p></p>
 <a href="mailto:example@example.com">example@example.com</a>
+<p></p>
 
-[placeholder\@gmail.com](mailto:placeholder@gmail.com?subject=FoodFoto)
-
-07911111111111111
-
+<p></p>
+<p></p>
 I'm sexy and I know it
+<p></p>
+<p></p>
