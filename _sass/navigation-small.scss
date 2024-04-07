@@ -36,7 +36,7 @@ nav.stroke a:active {
 .topnav {
   background-color: #ffffff;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 0 0 50px 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -46,7 +46,7 @@ nav.stroke a:active {
   padding: 15px;
   text-decoration: none;
   color: #aaa;
-  font-weight: 800;
+  font-weight: 400;
   // text-transform: uppercase;
   text-align: center;
   margin: 0 10px;
