@@ -2,15 +2,11 @@
 layout: default
 ---
 
-<div style="text-align: center">
-  <div style="display: inline-block; text-align: justify; max-width: 750px">
-    {{content}}
-    <p></p>
-    <a href="tel:{{page.phone}}">{{page.phone}}</a>
-    <p></p>
-    <a
-      href="mailto:{{page.email_address}}?subject={{page.email_subject}}&body={{page.email_body}}"
-      >{{page.email_address}}</a
-    >
-  </div>
-</div>
+{{content}}
+<p></p>
+<a href="tel:{{page.phone_number}}">{{page.phone_number}}</a>
+<p></p>
+<a
+  href="mailto:{{page.email_address}}?subject={{page.email_subject}}&body={{page.email_body}}"
+  >{{page.email_address}}
+</a>
