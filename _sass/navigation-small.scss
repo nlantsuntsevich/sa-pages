@@ -36,6 +36,7 @@ nav.stroke a:active {
 .topnav {
   // background-color: #333;
   overflow: hidden;
+  margin: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -49,6 +50,13 @@ nav.stroke a:active {
   text-transform: uppercase;
   text-align: center;
   margin: 0 10px;
+
+  font-family: "work sans", sans serif;
+  font-size: 1.5em;
+}
+
+.topnav a:first-child {
+  padding-left: 0;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
