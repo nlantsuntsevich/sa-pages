@@ -22,22 +22,20 @@
     list-style-type: none;
   }
 
-  // .menu-container {
-  //   margin-top: 50px;
+  #menu-checkbox {
+    display: block;
+  }
+
+  // .phone {
+  //   background-color: #36383f;
+  //   border-radius: 40px;
+  //   width: 300px;
+  //   height: 600px;
   //   display: flex;
   //   justify-content: center;
   //   align-items: center;
+  //   box-shadow: 30px 50px 100px #85888c;
   // }
-  .phone {
-    background-color: #36383f;
-    border-radius: 40px;
-    width: 300px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 30px 50px 100px #85888c;
-  }
   .menu-content {
     border: 1px solid #36383f;
     border-radius: 20px;
