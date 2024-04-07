@@ -27,9 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-        # with:
-        #   ref: d53c031595f3003cad10d412e17e7077732ed62e
+        uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
