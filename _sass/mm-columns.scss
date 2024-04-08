@@ -33,7 +33,7 @@
 
 .mm-columns__item {
   position: relative;
-  max-width: var(--_col-width, 280px);
+  max-width: var(--col-width);
 }
 
 .mm-columns__item:hover .overlay {
