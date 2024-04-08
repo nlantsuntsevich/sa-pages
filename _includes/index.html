@@ -2,9 +2,13 @@
   {% for item in site.data.index %}
   <div class="mm-columns__item">
     <a href="{{ item.src_url}}" target="_blank">
-      <img class="mm-columns__img" src="{{ item.src_url}}" />
+      <img
+        class="mm-columns__img"
+        src="{{ item.src_url }}"
+        alt="{{ item.name }}"
+      />
+      <div class="overlay">{{ item.name }}</div>
     </a>
-    <div class="overlay">{{ item.name }}</div>
   </div>
   {% endfor %}
 </div>
