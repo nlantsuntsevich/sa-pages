@@ -39,3 +39,9 @@
 .mm-columns__item:hover .overlay {
   opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .mm-columns__item:hover .overlay {
+    display: none;
+  }
+}
