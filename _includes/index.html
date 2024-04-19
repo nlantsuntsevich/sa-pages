@@ -1,8 +1,9 @@
 <script lang="javascript">
-  $('.mm-columns__item').imagesLoaded({
-      background: true
-    }, function( imgLoad ) { }
-  );
+  $('.mm-columns').imagesLoaded(function() {
+      $('.mm-columns').masonry({
+          itemSelector: '.mm-columns__item'
+      });
+  });
 </script>
 
 <div class="mm-columns">
