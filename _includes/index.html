@@ -1,12 +1,3 @@
-<script lang="javascript">
-
-  $('#gallery').imagesLoaded(function() {
-      $('#gallery').masonry({
-          itemSelector: '.mm-columns__item'
-      });
-  });
-</script>
-
 <div class="mm-columns" id="gallery">
   {% for item in site.data.index %}
   <div class="mm-columns__item">
