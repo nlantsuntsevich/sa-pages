@@ -1,8 +1,25 @@
-<script lang="javascript">
-  $("#body").imagesLoaded(function () {
+<!-- <script lang="javascript">
+  $("#gallery").imagesLoaded(function () {
     $("#gallery").masonry({
-      itemSelector: ".mm-columns__img",
-      percentPosition: true
+      itemSelector: ".mm-columns__ item",
+        });
+  });
+</script> -->
+<script>
+  Promise.all(
+    Array.from(document.images)
+      .filter((img) => !img.complete)
+      .map(
+        (img) =>
+          new Promise((resolve) => {
+            img.onload = img.onerror = resolve;
+          })
+      )
+  ).then(() => {
+    var elem = document.querySelector(".grid");
+    var msnry = new Masonry(elem, {
+      itemSelector: ".mm-columns__ item",
+      gutter: 10,
     });
   });
 </script>
