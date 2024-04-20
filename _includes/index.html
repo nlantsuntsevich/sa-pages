@@ -1,7 +1,8 @@
 <script lang="javascript">
-  $("#gallery").imagesLoaded(function () {
+  $("#body").imagesLoaded(function () {
     $("#gallery").masonry({
       itemSelector: ".mm-columns__item",
+      percentPosition: true
     });
   });
 </script>

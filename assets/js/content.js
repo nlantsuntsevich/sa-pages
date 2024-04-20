@@ -1,5 +1,5 @@
-$("#gallery").imagesLoaded(function () {
-  $("#gallery").masonry({
-    itemSelector: ".mm-columns__item",
-  });
-});
+// $("#gallery").imagesLoaded(function () {
+//   $("#gallery").masonry({
+//     itemSelector: ".mm-columns__item",
+//   });
+// });
