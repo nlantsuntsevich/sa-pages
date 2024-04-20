@@ -5,7 +5,7 @@
         });
   });
 </script> -->
-<script>
+<!-- <script>
   Promise.all(
     Array.from(document.images)
       .filter((img) => !img.complete)
@@ -21,6 +21,21 @@
       itemSelector: ".mm-columns__ item",
       gutter: 10,
     });
+  });
+</script> -->
+<script>
+  Promise.all(
+    Array.from(document.images)
+      .filter((img) => !img.complete)
+      .map(
+        (img) =>
+          new Promise((resolve) => {
+            img.onload = img.onerror = resolve;
+          })
+      )
+  ).then(() => {
+    var msnry = new Masonry(".grid");
+    msnry.layout();
   });
 </script>
 
