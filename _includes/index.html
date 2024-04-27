@@ -9,10 +9,10 @@
           })
       )
   ).then(() => {
-    var elem = document.querySelector(".container");
+    var elem = document.querySelector("mm-columns");
     var msnry = new Masonry(elem, {
-      itemSelector: ".mm-columns",
-      gutter: 10,
+      itemSelector: ".mm-columns__item",
+      percentPosition: true,
     });
   });
 </script>
