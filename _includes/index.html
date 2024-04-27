@@ -5,7 +5,7 @@
         });
   });
 </script> -->
-<!-- <script>
+<script>
   Promise.all(
     Array.from(document.images)
       .filter((img) => !img.complete)
@@ -18,12 +18,12 @@
   ).then(() => {
     var elem = document.querySelector(".grid");
     var msnry = new Masonry(elem, {
-      itemSelector: ".mm-columns__ item",
+      itemSelector: ".mm-columns__item",
       gutter: 10,
     });
   });
-</script> -->
-<script>
+</script>
+<!-- <script>
   Promise.all(
     Array.from(document.images)
       .filter((img) => !img.complete)
@@ -34,10 +34,10 @@
           })
       )
   ).then(() => {
-    var msnry = new Masonry(".grid");
-    msnry.layout();
+    var elem = document.querySelector(".grid");
+    var msnry = new Masonry(elem, { itemSelector: ".grid-item", gutter: 10 });
   });
-</script>
+</script> -->
 
 <div class="mm-columns" id="gallery">
   {% for item in site.data.index %}
