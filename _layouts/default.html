@@ -42,15 +42,14 @@
   </head>
   <body>
     <div class="container">
-      <div id="content-wrap">
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.subtitle }}</h2>
-        {% include navigation.html %} {{ content }}
-        <p></p>
-        <p></p>
-      </div>
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.subtitle }}</h2>
+      {% include navigation.html %} {{ content }}
+      <p></p>
+      <p></p>
+      <div class="push"></div>
     </div>
-    <footer id="footer">
+    <footer class="footer">
       <p>kitchenreligion.co.uk®</p>
     </footer>
   </body>
