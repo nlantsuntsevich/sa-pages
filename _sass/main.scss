@@ -20,6 +20,8 @@ html {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+  min-height: 100vh;
 }
 
 h1 {
@@ -51,10 +53,26 @@ h2 {
   padding: 0 0 40px 0;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
+// .footer {
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   background-color: white;
+// }
+// #page-container {
+//   position: relative;
+//   min-height: 100vh;
+// }
+
+#content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+#footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  height: 2.5rem;
+  background-color: white; /* Footer height */
 }
