@@ -22,9 +22,9 @@
   });
 </script> -->
 <script>
-  $("#container").imagesLoaded(function () {
-    $("#gallery").masonry({
-      itemSelector: ".mm-columns__item",
+  $("#gallery").imagesLoaded(function () {
+    $(".mm-columns__item").masonry({
+      itemSelector: ".mm-columns__img",
       percentPosition: true,
     });
   });
