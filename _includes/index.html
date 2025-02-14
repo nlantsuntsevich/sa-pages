@@ -119,7 +119,9 @@
         img.classList.add("loading");
         requestAnimationFrame(() => {
           img.classList.add("loaded");
-          masonry.layout();
+          if (masonry) {
+            masonry.layout();
+          }
         });
       });
     }
@@ -137,7 +139,9 @@
               img.addEventListener("load", () => handleImageLoad(img));
               img.addEventListener("error", () => {
                 img.style.display = "none";
-                masonry.layout();
+                if (masonry) {
+                  masonry.layout();
+                }
               });
             }
 
@@ -155,8 +159,10 @@
     const images = document.querySelectorAll(".mm-columns__img");
     images.forEach((img) => imageObserver.observe(img));
 
-    // Initial layout
-    masonry.layout();
+    // Initial layout if masonry exists
+    if (masonry) {
+      masonry.layout();
+    }
   });
 </script>
 
@@ -176,12 +182,3 @@
   {% endfor %}
 </div>
 
-<!-- Uncaught TypeError: masonry is null
-    handleImageLoad https://nlantsuntsevich.github.io/stanem-pages/:180
-    handleImageLoad https://nlantsuntsevich.github.io/stanem-pages/:178
-    handleImageLoad https://nlantsuntsevich.github.io/stanem-pages/:176
-    imageObserver https://nlantsuntsevich.github.io/stanem-pages/:193
-    imageObserver https://nlantsuntsevich.github.io/stanem-pages/:188
-    IntersectionCallback* https://nlantsuntsevich.github.io/stanem-pages/:186
-    EventListener.handleEvent* https://nlantsuntsevich.github.io/stanem-pages/:136 -->
-#AI!
