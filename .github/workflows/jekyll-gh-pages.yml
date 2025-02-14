@@ -35,9 +35,6 @@ jobs:
         with:
           source: ./
           destination: ./_site
-          #Artifact github-pages.zip successfully finalized. Artifact ID 2594458170
-      #Artifact github-pages has been successfully uploaded! Final size is 10146794 bytes. Artifact ID is 2594458170
-      #Artifact download URL: https://github.com/nlantsuntsevich/stanem-pages/actions/runs/13335373675/artifacts/2594458170
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -53,4 +50,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
