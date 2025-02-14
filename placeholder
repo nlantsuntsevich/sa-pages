@@ -51,32 +51,32 @@
         </div>
       </div>
 
-      <section class="gallery"></section>
-      
-      <div class="item v2 h3">
-        <li><img src="assets/images/1.gif"></li>
-        <div class="item__overlay">
-          <button>View →</button>
+      <section class="gallery">
+        <div class="item v2 h3">
+          <li><img src="assets/images/1.gif" loading="lazy"></li>
+          <div class="item__overlay">
+            <button>View →</button>
+          </div>
         </div>
-      </div>
-      <div class="item v2 h2">
-        <li><img src="assets/images/2.gif"></li>
-        <div class="item__overlay">
-          <button>View →</button>
+        <div class="item v2 h2">
+          <li><img src="assets/images/2.gif" loading="lazy"></li>
+          <div class="item__overlay">
+            <button>View →</button>
+          </div>
         </div>
-      </div>
-      <div class="item v3 h2">
-        <li><img src="assets/images/3.gif"></li>
-        <div class="item__overlay">
-          <button>View →</button>
+        <div class="item v3 h2">
+          <li><img src="assets/images/3.gif" loading="lazy"></li>
+          <div class="item__overlay">
+            <button>View →</button>
+          </div>
         </div>
-      </div>
-      <div class="item v4 h4">
-        <li><img src="assets/images/4.gif"></li>
-        <div class="item__overlay">
-          <button>View →</button>
+        <div class="item v4 h4">
+          <li><img src="assets/images/4.gif" loading="lazy"></li>
+          <div class="item__overlay">
+            <button>View →</button>
+          </div>
         </div>
-      </div>
+      </section>
     </ul>
 
       
