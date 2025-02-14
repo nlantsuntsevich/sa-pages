@@ -29,24 +29,45 @@
   }
 
   /* Responsive grid layouts */
+  .mm-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 1600px;
+  }
+
   @media screen and (min-width: 768px) {
     .mm-columns {
-      column-count: 2;
-      column-gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media screen and (min-width: 1024px) {
     .mm-columns {
-      column-count: 3;
-      max-width: 1200px;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   @media screen and (min-width: 1440px) {
     .mm-columns {
-      column-count: 4;
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .mm-columns__item:hover .overlay {
+    opacity: 1;
   }
 </style>
 
@@ -149,6 +170,3 @@
   </div>
   {% endfor %}
 </div>
-
-# revert back image title # fix grid for bigger devices - now it shows full
-picture size instead of grid # AI!
