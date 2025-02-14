@@ -43,13 +43,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./_site
-  # Run actions/deploy-pages@v2
-  # Artifact exchange URL: https://pipelinesghubeus11.actions.githubusercontent.com/22LRw3pIxSP0YYDhD85fGx9BSK9PVgCrZR97dMqTykz8A3ubRL/_apis/pipelines/workflows/13335373675/artifacts?api-version=6.0-preview
-  # Error: Error: No uploaded artifact was found! Please check if there are any errors at build step, or uploaded artifact name is correct.
-  #     at getSignedArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v2/src/internal/api-client.js:94:1)
-  #     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-  #     at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v2/src/internal/deployment.js:68:1)
-  #     at main (/home/runner/work/_actions/actions/deploy-pages/v2/src/index.js:30:1) AI!
   # Deployment job
   deploy:
     environment:
