@@ -9,32 +9,32 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector(".mm-columns");
-    
+
     // Initialize Masonry first
     const masonry = new Masonry(grid, {
       itemSelector: ".mm-columns__item",
       gutter: 10,
-      initLayout: false
+      initLayout: false,
     });
 
     // Function to handle image load
     function handleImageLoad(img) {
-      img.classList.add('loaded');
+      img.classList.add("loaded");
       masonry.layout(); // Refresh layout when each image loads
     }
 
     // Preload all images
-    const images = document.querySelectorAll('.mm-columns__img');
-    images.forEach(img => {
-      img.classList.add('loading');
-      
+    const images = document.querySelectorAll(".mm-columns__img");
+    images.forEach((img) => {
+      img.classList.add("loading");
+
       if (img.complete) {
         handleImageLoad(img);
       } else {
-        img.addEventListener('load', () => handleImageLoad(img));
-        img.addEventListener('error', () => handleImageLoad(img));
+        img.addEventListener("load", () => handleImageLoad(img));
+        img.addEventListener("error", () => handleImageLoad(img));
       }
     });
 
@@ -58,3 +58,4 @@
   </div>
   {% endfor %}
 </div>
+# fix sporadic image load, make it load smooth AI!
