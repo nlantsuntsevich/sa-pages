@@ -77,7 +77,7 @@
 
     // Initialize Masonry only for larger screens
     let masonry = null;
-    
+
     function initializeLayout() {
       const width = window.innerWidth;
       if (width >= 768 && !masonry) {
@@ -86,7 +86,7 @@
           gutter: 15,
           percentPosition: true,
           transitionDuration: "0.3s",
-          initLayout: true
+          initLayout: true,
         });
       } else if (width < 768 && masonry) {
         masonry.destroy();
@@ -106,9 +106,12 @@
       };
     };
 
-    window.addEventListener('resize', debounce(() => {
-      initializeLayout();
-    }, 250));
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        initializeLayout();
+      }, 250)
+    );
 
     // Function to handle image load with progressive enhancement
     function handleImageLoad(img) {
@@ -172,3 +175,13 @@
   </div>
   {% endfor %}
 </div>
+
+<!-- Uncaught TypeError: masonry is null
+    handleImageLoad https://nlantsuntsevich.github.io/stanem-pages/:180
+    handleImageLoad https://nlantsuntsevich.github.io/stanem-pages/:178
+    handleImageLoad https://nlantsuntsevich.github.io/stanem-pages/:176
+    imageObserver https://nlantsuntsevich.github.io/stanem-pages/:193
+    imageObserver https://nlantsuntsevich.github.io/stanem-pages/:188
+    IntersectionCallback* https://nlantsuntsevich.github.io/stanem-pages/:186
+    EventListener.handleEvent* https://nlantsuntsevich.github.io/stanem-pages/:136 -->
+#AI!
