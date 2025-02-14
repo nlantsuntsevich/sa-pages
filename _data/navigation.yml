@@ -1,6 +1,6 @@
 - name: gallery
-  link: /
+  link: /stanem-pages/
 - name: about
-  link: /about.html
+  link: /stanem-pages/about.html
 - name: contact information
-  link: /contacts.html
+  link: /stanem-pages/contacts.html
