@@ -46,32 +46,35 @@
     }
 
     // Load images progressively using Intersection Observer
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          
-          if (img.complete) {
-            handleImageLoad(img);
-          } else {
-            img.addEventListener("load", () => handleImageLoad(img));
-            img.addEventListener("error", () => {
-              img.style.display = 'none';
-              masonry.layout();
-            });
+    const imageObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+
+            if (img.complete) {
+              handleImageLoad(img);
+            } else {
+              img.addEventListener("load", () => handleImageLoad(img));
+              img.addEventListener("error", () => {
+                img.style.display = "none";
+                masonry.layout();
+              });
+            }
+
+            observer.unobserve(img);
           }
-          
-          observer.unobserve(img);
-        }
-      });
-    }, {
-      rootMargin: "50px",
-      threshold: 0.1
-    });
+        });
+      },
+      {
+        rootMargin: "50px",
+        threshold: 0.1,
+      }
+    );
 
     // Observe all images
     const images = document.querySelectorAll(".mm-columns__img");
-    images.forEach(img => imageObserver.observe(img));
+    images.forEach((img) => imageObserver.observe(img));
 
     // Initial layout
     masonry.layout();
@@ -93,3 +96,5 @@
   </div>
   {% endfor %}
 </div>
+# grid is broken, i need dynamic grid based on device size, mobile and desktop
+#AI!
