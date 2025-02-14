@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <!--  Essential META Tags -->
-    <meta property="og:title" content="Kitchen Religion" />
+    <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
@@ -13,16 +13,11 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <!--  Non-Essential, But Recommended -->
-    <meta
-      property="og:description"
-      content="Food photography and styling by Stephanie"
-    />
-    <!-- <meta property="og:site_name" content="Kitchen Religion Food Photography" /> -->
-    <!-- <meta name="twitter:image:alt" content="Kitchen Religion" /> -->
+    <meta property="og:description" content="{{ page.subtitle }}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
-    <link href="/stanem-pages/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400"
       rel="stylesheet"
@@ -33,22 +28,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <meta name="description" content="{{ page.title }}" />
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-    <script src="/stanem-pages/assets/js/content.js"></script>
+    <script src="/assets/js/content.js"></script>
   </head>
   <body>
-    <div class="container" id="container">
+    <div class="container">
       <h1>{{ page.title }}</h1>
       <h2>{{ page.subtitle }}</h2>
       {% include navigation.html %} {{ content }}
       <div class="push"></div>
     </div>
     <footer class="footer">
-      <p>kitchenreligion.co.uk®</p>
+      <small>©2024 kitchenreligion.co.uk - All Rights Reserved</small>
     </footer>
   </body>
 </html>

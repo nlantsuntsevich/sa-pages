@@ -1,42 +1,57 @@
-<!-- <script>
-  Promise.all(
-    Array.from(document.images)
-      .filter((img) => !img.complete)
-      .map(
-        (img) =>
-          new Promise((resolve) => {
-            img.onload = img.onerror = resolve;
-          })
-      )
-  ).then(() => {
-    var elem = document.querySelector("#gallery");
-    var msnry = new Masonry(elem, {
-      itemSelector: ".mm-columns__item",
-      percentPosition: true,
-    });
-  });
-</script> -->
-<!-- <script>
-  $("#container").imagesLoaded(function () {
-    // images have loaded
-  });
-</script> -->
+<style>
+  .loading {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+  .loaded {
+    opacity: 1;
+  }
+</style>
+
 <script>
-  $("#gallery").imagesLoaded(function () {
-    $(".mm-columns__item").masonry({
-      itemSelector: ".mm-columns__img",
-      percentPosition: true,
+  document.addEventListener('DOMContentLoaded', function() {
+    const grid = document.querySelector(".mm-columns");
+    
+    // Initialize Masonry first
+    const masonry = new Masonry(grid, {
+      itemSelector: ".mm-columns__item",
+      gutter: 10,
+      initLayout: false
     });
+
+    // Function to handle image load
+    function handleImageLoad(img) {
+      img.classList.add('loaded');
+      masonry.layout(); // Refresh layout when each image loads
+    }
+
+    // Preload all images
+    const images = document.querySelectorAll('.mm-columns__img');
+    images.forEach(img => {
+      img.classList.add('loading');
+      
+      if (img.complete) {
+        handleImageLoad(img);
+      } else {
+        img.addEventListener('load', () => handleImageLoad(img));
+        img.addEventListener('error', () => handleImageLoad(img));
+      }
+    });
+
+    // Initial layout
+    masonry.layout();
   });
 </script>
-<div class="mm-columns" id="gallery">
+
+<div class="mm-columns">
   {% for item in site.data.index %}
   <div class="mm-columns__item">
-    <a href="{{ item.src_url}}" target="_blank">
+    <a href="{{ item.src_url }}" target="_blank">
       <img
         class="mm-columns__img"
         src="{{ item.src_url }}"
         alt="{{ item.name }}"
+        loading="lazy"
       />
     </a>
     <div class="overlay">{{ item.name }}</div>
