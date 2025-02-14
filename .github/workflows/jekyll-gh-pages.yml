@@ -39,6 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
 
   # Deployment job
+  # Error: Error: No uploaded artifact was found! Please check if there are any errors at build step, or uploaded artifact name is correct. AI!
   deploy:
     environment:
       name: github-pages
