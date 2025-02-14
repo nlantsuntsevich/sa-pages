@@ -9,9 +9,15 @@
     opacity: 1;
     filter: blur(0);
   }
+  .mm-columns {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+  }
   .mm-columns__item {
     background: #f5f5f5;
-    min-height: 100px;
+    margin-bottom: 15px;
+    break-inside: avoid;
     position: relative;
     overflow: hidden;
   }
@@ -21,17 +27,64 @@
     height: auto;
     will-change: opacity, filter;
   }
+  
+  /* Responsive grid layouts */
+  @media screen and (min-width: 768px) {
+    .mm-columns {
+      column-count: 2;
+      column-gap: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .mm-columns {
+      column-count: 3;
+      max-width: 1200px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .mm-columns {
+      column-count: 4;
+    }
+  }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector(".mm-columns");
 
-    // Initialize Masonry first
-    const masonry = new Masonry(grid, {
-      itemSelector: ".mm-columns__item",
-      gutter: 10,
-      initLayout: false,
+    // Initialize layout based on screen size
+    function initializeLayout() {
+      const width = window.innerWidth;
+      if (width >= 768) {
+        // Use Masonry for larger screens
+        return new Masonry(grid, {
+          itemSelector: ".mm-columns__item",
+          gutter: 15,
+          percentPosition: true,
+          transitionDuration: '0.3s',
+          initLayout: false,
+        });
+      }
+      return null; // Use CSS grid for mobile
+    }
+    
+    let masonry = initializeLayout();
+    
+    // Update layout on resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (masonry) {
+          masonry.destroy();
+        }
+        masonry = initializeLayout();
+        if (masonry) {
+          masonry.layout();
+        }
+      }, 250);
     });
 
     // Function to handle image load with progressive enhancement
@@ -96,5 +149,3 @@
   </div>
   {% endfor %}
 </div>
-# grid is broken, i need dynamic grid based on device size, mobile and desktop
-#AI!
