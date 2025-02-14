@@ -27,7 +27,7 @@
     height: auto;
     will-change: opacity, filter;
   }
-  
+
   /* Responsive grid layouts */
   @media screen and (min-width: 768px) {
     .mm-columns {
@@ -35,14 +35,14 @@
       column-gap: 15px;
     }
   }
-  
+
   @media screen and (min-width: 1024px) {
     .mm-columns {
       column-count: 3;
       max-width: 1200px;
     }
   }
-  
+
   @media screen and (min-width: 1440px) {
     .mm-columns {
       column-count: 4;
@@ -63,18 +63,18 @@
           itemSelector: ".mm-columns__item",
           gutter: 15,
           percentPosition: true,
-          transitionDuration: '0.3s',
+          transitionDuration: "0.3s",
           initLayout: false,
         });
       }
       return null; // Use CSS grid for mobile
     }
-    
+
     let masonry = initializeLayout();
-    
+
     // Update layout on resize
     let resizeTimer;
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
         if (masonry) {
@@ -149,3 +149,6 @@
   </div>
   {% endfor %}
 </div>
+
+# revert back image title # fix grid for bigger devices - now it shows full
+picture size instead of grid # AI!
