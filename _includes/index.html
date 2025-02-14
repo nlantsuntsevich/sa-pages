@@ -77,7 +77,7 @@
 
     // Initialize Masonry only for larger screens
     let masonry = null;
-    
+
     function initializeLayout() {
       const width = window.innerWidth;
       if (width >= 768 && !masonry) {
@@ -86,7 +86,7 @@
           gutter: 15,
           percentPosition: true,
           transitionDuration: "0.3s",
-          initLayout: true
+          initLayout: true,
         });
       } else if (width < 768 && masonry) {
         masonry.destroy();
@@ -106,9 +106,12 @@
       };
     };
 
-    window.addEventListener('resize', debounce(() => {
-      initializeLayout();
-    }, 250));
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        initializeLayout();
+      }, 250)
+    );
 
     // Function to handle image load with progressive enhancement
     function handleImageLoad(img) {
@@ -116,7 +119,9 @@
         img.classList.add("loading");
         requestAnimationFrame(() => {
           img.classList.add("loaded");
-          masonry.layout();
+          if (masonry) {
+            masonry.layout();
+          }
         });
       });
     }
@@ -134,7 +139,9 @@
               img.addEventListener("load", () => handleImageLoad(img));
               img.addEventListener("error", () => {
                 img.style.display = "none";
-                masonry.layout();
+                if (masonry) {
+                  masonry.layout();
+                }
               });
             }
 
@@ -152,8 +159,10 @@
     const images = document.querySelectorAll(".mm-columns__img");
     images.forEach((img) => imageObserver.observe(img));
 
-    // Initial layout
-    masonry.layout();
+    // Initial layout if masonry exists
+    if (masonry) {
+      masonry.layout();
+    }
   });
 </script>
 
@@ -172,3 +181,4 @@
   </div>
   {% endfor %}
 </div>
+
